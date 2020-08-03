@@ -20,32 +20,40 @@ This :shit: is :no_good: :exclamation:
 Usage
 ----------------
 
-If you have `moji.py` saved in the user site-packages folder, this will work from anywhere.
-
 ```bash
 python -m moji
 ```
 
+That will produce **one random emoji from the entire list of emojis**! :snowman:, right?
+
+_But if you add a number after_, **baby, now we're cooking with** :fire:
+
+```bash
+python -m moji 20
+```
+---
+
+If you have `moji.py` saved in the user site-packages folder, this will work from anywhere.
+
 Otherwise, you'll have to call it from the folder you've got it saved in. Open a terminal there, and just type
+
 ```bash
 moji
 ```
-
----
-
-By just typing the above command, you'll just get 1 emoji from the whole selection of them. _But if you add a number after_, **baby, now we're cooking with** :fire:
-
-
-> If you use the `emoji.bat` file included in this repo, and place it in a Shortcuts folder, or somewhere on the PATH, then you can even call this without `python -m`
+> **NOTE**: _If you use the `emoji.bat` file included in this repo, and place it in a Shortcuts folder, or somewhere on the PATH, then you can even call this without `python -m`_
 
 ![](https://github.com/iiviigames/Gimoji/blob/master/img/emoji_bat.gif)
 
 **But wait! There's more!**
 
+```bash
+python -m moji 30 -d
+```
+The `-d` is a debug flag, and will help you see how many emojis were output, and from which categories. More on the categories below.
 
 
-Arguments and Help
--------------------
+Specific Emojis, Arguments, and Help
+------------------------------------
 
 ```bash
 python -m moji -h
@@ -55,22 +63,34 @@ will produce some assitance for you , like so:
 ![](https://raw.githubusercontent.com/iiviigames/Gimoji/master/img/moji_help.gif)
 
 
-Getting Emojis from specific Groups
-------------------------------------
+### Getting Emojis from specific Groups
 
 These are the categories I have the emojis grouped into:
 
-|Category |Command| Description          |
-|---------|-------|----------------------|
-|All      |`-a`   |_everything_          |
-|Emotes   |`-e`   |_people_               |
+|Category |Command| Description           |
+|---------|-------|-----------------------|
+|All      |`-a`   |_everything_           |
+|Emotes   |`-e`   |_people and emotions_  |
+|Objects  |`-o`   |_nouns, ya know?_      |
 |Nature   |`-n`   |_the great outdoors_   |
-|Places   |`-p`   |_man made_     :shit:  |
+|Places   |`-p`   |_man made:shit:_       |
 |Symbols  |`-s`   |_all the weird and miscellaneous_|
-
 
 ![](https://raw.githubusercontent.com/iiviigames/Gimoji/master/img/moji_categories.gif)
 
 
+> NOTE: _Only one of those arguments can be used at a time, or it won't give you anything at all!_
+
+### Getting the Group You want by Name
+
+You can use the optional argumen `-m` to supply the name of the emoji set you'd like as well:
+
+```bash
+python -m moji -m nature 30
+```
+_which would give you 30 random emojis selected from the nature category!_
+
+
+---
 
 
