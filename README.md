@@ -90,6 +90,7 @@ python -m moji -m nature 30
 ```
 _which would give you 30 random emojis selected from the nature category!_
 
+![](https://raw.githubusercontent.com/iiviigames/Gimoji/master/img/special_cat.gif)
 
 ---
 
